@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "Python Module",
+        //     "type": "python",
+        //     "request": "launch",
+        //     // stopOnEntry设置为false，否则进入第一行代码时就暂停
+        //     "stopOnEntry": false,
+        //     "osx": {
+        //         "pythonPath": "${config:python.pythonPath}"
+        //     },
+        //     "windows": {
+        //         "pythonPath":  "${config:python.pythonPath}"
+        //     },
+        //     "linux": {
+        //         "pythonPath": "${config:python.pythonPath}"
+        //     },
+        //     // python -m fin_info_crawler.stock_analysis.finance_derivative_indicator_calculator
+        //     "module": "fin_info_crawler.stock_analysis.finance_derivative_indicator_calculator",
+        //     // "module": "fin_info_crawler.stock_analysis.${fileBasenameNoExtension}",
+        //     "cwd": "${workspaceRoot}"
+        // },
+        {
+            "name": "Python: test.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/disaster_response_pipeline_project/test.py",
+            // 内置Terminal
+            "console": "integratedTerminal",
+            // 外部Terminal
+            // "console": "externalTerminal",
+            "osx": {
+                "pythonPath": "${config:python.pythonPath}"
+            },
+            "windows": {
+                "pythonPath":  "${config:python.pythonPath}"
+            },
+            "linux": {
+                "pythonPath": "${config:python.pythonPath}"
+            },
+            "args": [
+                // python test.py arg1 arg2
+                // "arg1",
+                // "arg2",
+            ]
+        },
+    ]
+}
