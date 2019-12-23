@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         // {
         //     "name": "Python Module",
         //     "type": "python",
@@ -47,6 +48,80 @@
                 // "arg1",
                 // "arg2",
             ]
+        },
+        {
+            "name": "Python: process_data.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/disaster_response_pipeline_project/data/process_data.py",
+            // 内置Terminal
+            "console": "integratedTerminal",
+            // 外部Terminal
+            // "console": "externalTerminal",
+            "osx": {
+                "pythonPath": "${config:python.pythonPath}"
+            },
+            "windows": {
+                "pythonPath":  "${config:python.pythonPath}"
+            },
+            "linux": {
+                "pythonPath": "${config:python.pythonPath}"
+            },
+            "args": [
+                // set args
+                "data/disaster_messages.csv",
+                "data/disaster_categories.csv",
+                "data/DisasterResponse.db"
+            ],
+            "cwd": "${workspaceFolder}/disaster_response_pipeline_project"
+        },
+        {
+            "name": "Python: train_classifier.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/disaster_response_pipeline_project/models/train_classifier.py",
+            // 内置Terminal
+            "console": "integratedTerminal",
+            // 外部Terminal
+            // "console": "externalTerminal",
+            "osx": {
+                "pythonPath": "${config:python.pythonPath}"
+            },
+            "windows": {
+                "pythonPath":  "${config:python.pythonPath}"
+            },
+            "linux": {
+                "pythonPath": "${config:python.pythonPath}"
+            },
+            "args": [
+                // set args
+                "data/DisasterResponse.db",
+                "models/classifier.pkl"
+            ],
+            "cwd": "${workspaceFolder}/disaster_response_pipeline_project"
+        },
+        {
+            "name": "Python: run.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/disaster_response_pipeline_project/app/run.py",
+            // 内置Terminal
+            "console": "integratedTerminal",
+            // 外部Terminal
+            // "console": "externalTerminal",
+            "osx": {
+                "pythonPath": "${config:python.pythonPath}"
+            },
+            "windows": {
+                "pythonPath":  "${config:python.pythonPath}"
+            },
+            "linux": {
+                "pythonPath": "${config:python.pythonPath}"
+            },
+            "args": [
+                // set args
+            ],
+            "cwd": "${workspaceFolder}/disaster_response_pipeline_project"
         },
     ]
 }
