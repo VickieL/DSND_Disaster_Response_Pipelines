@@ -64,6 +64,9 @@ In this project, I did following steps to build the model and use it in a web ap
 ## Results<a name="results"></a>
 
 The trained model is stored here: model/classifier.pkl. (however, due to the file is large, I cannot push to github)
+web app snapshots can be found here:
+- disaster_response_pipeline_project/app/web1snapshot.htm
+- disaster_response_pipeline_project/app/web2snapshot.htm
 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
